@@ -154,8 +154,9 @@ public class JitsiMeetPlugin() : FlutterPlugin, MethodCallHandler, ActivityAware
         // Build with meeting options and feature flags
         val options = optionsBuilder.build()
 
-        JitsiMeetPluginActivity.launchActivity(activity, options)
-        result.success("Successfully joined room: $room")
+        // JitsiMeetPluginActivity.launchActivity(activity, options)
+        // result.success("Successfully joined room: $room")
+         Log.d("JITSI_PLUGIN_TAG", "Server URL: $serverURL, $serverURLString")
     }
 
     private fun closeMeeting(call: MethodCall, result: Result) {
