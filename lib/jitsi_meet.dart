@@ -38,7 +38,7 @@ class JitsiMeet {
       {JitsiMeetingListener? listener,
       Map<RoomNameConstraintType, RoomNameConstraint>?
           roomNameConstraints}) async {
-    log(' =================================== Meeting Join =================================== ');
+    log(' <====================================================================== Meeting Join ======================================================================> ');
     assert(options.room.trim().isNotEmpty, "room is empty");
 
     // If no constraints given, take default ones
