@@ -122,7 +122,7 @@ public class JitsiMeetPlugin() : FlutterPlugin, MethodCallHandler, ActivityAware
             serverURLString = "https://meet.jit.si";
         }
         val serverURL = URL(serverURLString)
-        Log.d(JITSI_PLUGIN_TAG, "Server URL: $serverURL, $serverURLString")
+        Log.d(JITSI_PLUGIN_TAG, "S---------------------Server URL: $serverURL, $serverURLString")
 
         val optionsBuilder = JitsiMeetConferenceOptions.Builder()
 
